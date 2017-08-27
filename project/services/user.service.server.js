@@ -1,20 +1,20 @@
 var app = require('../../express');
 var userModel = require('../models/user/user.model.server');
 var passport = require('passport');
-var FacebookStrategy = require('passport-facebook').Strategy;
+// var FacebookStrategy = require('passport-facebook').Strategy;
 var bcrypt = require("bcrypt-nodejs");
 var LocalStrategy = require('passport-local').Strategy;
 passport.use(new LocalStrategy(localStrategy));
 passport.serializeUser(serializeUser);
 passport.deserializeUser(deserializeUser);
 
-var facebookConfig = {
-    clientID     : process.env.FACEBOOK_CLIENT_ID,
-    clientSecret : process.env.FACEBOOK_CLIENT_SECRET,
-    callbackURL  : process.env.FACEBOOK_CALLBACK_URL,
-    profileFields: ['email']
-};
-passport.use(new FacebookStrategy(facebookConfig, facebookStrategy));
+// var facebookConfig = {
+//     clientID     : process.env.FACEBOOK_CLIENT_ID,
+//     clientSecret : process.env.FACEBOOK_CLIENT_SECRET,
+//     callbackURL  : process.env.FACEBOOK_CALLBACK_URL,
+//     profileFields: ['email']
+// };
+// passport.use(new FacebookStrategy(facebookConfig, facebookStrategy));
 
 app.get ('/api/user/:userId', findUserById);
 app.get ('/api/user', isAdmin, findAllUsers);
@@ -24,12 +24,12 @@ app.delete ('/api/user/:userId', isAdmin, deleteUser);
 
 //To test passport authentication
 app.post ('/api/login', passport.authenticate('local'), login);
-app.get ('/auth/facebook', passport.authenticate('facebook', { scope : 'email' }));
-app.get('/auth/facebook/callback',
-    passport.authenticate('facebook', {
-        successRedirect: '/assignment/index.html#!/profile',
-        failureRedirect: '/#!/login'
-    }));
+// app.get ('/auth/facebook', passport.authenticate('facebook', { scope : 'email' }));
+// app.get('/auth/facebook/callback',
+//     passport.authenticate('facebook', {
+//         successRedirect: '/assignment/index.html#!/profile',
+//         failureRedirect: '/#!/login'
+//     }));
 
 app.get ('/api/loggedIn', loggedIn);
 app.get ('/api/checkAdmin', checkAdmin);
