@@ -1,6 +1,3 @@
-- Dharshini Govindarajan Graduate student at Northeastern University, Boston (MS in CS) 
-- Origin - Chennai, India 
-- Work Experience - 2years as a System Engineer at Tata Consultancy Services, India 
-- The GitHub repository holds the web project for the course - Web Development - CS5610 - Summer1 
-- Webdev Project - https://webdev-summer-17.herokuapp.com/
-- Webdev Assignments - https://github.com/dharshini18/govindarajan-dharshini-webdev
+"Theeni Pandora" is a Stand Alone Application that helps the users to find nearby Food trucks based on geography and lists the food they serve. The application allows users to search for food recipes based on the course, cuisine, and/or ingredients.
+
+The users can save these recipes and their favorite food truck information, rate them, and also provide comments/suggestions. Additionally, users can follow another user - provides a one stop shop to follow foodies for their reviews on food and restaurants and chefs for their new recipes and kitchen hacks are most sought after by the users.
