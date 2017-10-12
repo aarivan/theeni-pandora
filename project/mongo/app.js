@@ -1,6 +1,3 @@
-/**
- * Created by Dharshini on 6/8/2017.
- */
 var mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost/webdev-summer1-2017');
 mongoose.Promise = require('q').Promise;
