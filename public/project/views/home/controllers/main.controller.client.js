@@ -1,6 +1,3 @@
-/**
- * Created by Dharshini on 6/17/2017.
- */
 (function () {
     angular
         .module('PRJ')
