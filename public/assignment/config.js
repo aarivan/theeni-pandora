@@ -1,4 +1,3 @@
-/** * Created by Dharshini on 5/27/2017 */
 (function () {
     angular
         .module('WAM')
