@@ -1,4 +1,3 @@
-/** * Created by Dharshini on 6/9/2017. */
 var mongoose = require('mongoose');
 
 var websiteSchema = mongoose.Schema({
