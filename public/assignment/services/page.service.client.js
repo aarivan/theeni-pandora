@@ -1,6 +1,3 @@
-/**
- * Created by Dharshini on 5/28/2017.
- */
 (function () {
     angular
         .module('WAM')
