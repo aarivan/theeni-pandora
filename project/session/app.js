@@ -1,6 +1,3 @@
-/**
- * Created by Dharshini on 6/15/2017.
- */
 console.log('Session');
 var app = require('../../express');
 
